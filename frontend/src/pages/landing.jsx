@@ -1,6 +1,7 @@
 import React from 'react'
 import "../App.css"
 
+
 export default function LandingPage() {
   return (
     <div className='landingPageContainer'>
@@ -17,11 +18,15 @@ export default function LandingPage() {
 
         <div className="landingMainContainer">
             <div>
-                <h1><span style={{color: "#ff9839"}}>Connect</span> with your loved Ones</h1>
+                <h1><span style={{color: "#ff9839"}}>Connect</span> with your <br />Loved Ones</h1>
                 <p>Cover a distance by WeMeet</p>
+
+                  <div role='button'>
+                     <a href="/auth">Get Started</a>
+                  </div>
             </div>
             <div className='img'>
-                <img src="/mobile.png" alt="" />
+                <img src="/smartphn.png" alt="" />
             </div>
         </div>
 
