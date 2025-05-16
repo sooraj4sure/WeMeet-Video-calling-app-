@@ -7,7 +7,7 @@ import { log } from "node:console";
 import { connect } from "node:http2";
 import path from "node:path";
 import userRoutes from "./src/routes/users.routes.js";
-import connectToSocket from "./src/controllers/socketManager.js";
+import { connectToSocket } from "./src/controllers/socketManager.js";
 import { User } from "./src/models/user.model.js";
 import dotenv from 'dotenv';
 dotenv.config();
