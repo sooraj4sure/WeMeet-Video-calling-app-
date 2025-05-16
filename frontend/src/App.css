@@ -1,6 +1,6 @@
 /* landing page css */
 
-.landingPageContainer{
+/* .landingPageContainer{
   width: 100%;
   height: 100%;
   background: url("/background.png");
@@ -70,4 +70,200 @@
   height: 70vh;
   width: auto;
 
+} */
+/* App.css */
+
+/* App.css */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.landingPageContainer {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navbar Styles */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1e1e2f;
+  padding: 1rem 2rem;
+  color: white;
+  position: relative;
+}
+
+.navHeader h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+/* Hamburger Icon */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+}
+
+/* Navigation Items */
+.navlist {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.navlist p,
+.navlist div {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+  white-space: nowrap;
+}
+
+.navlist p:hover,
+.navlist div:hover {
+  background-color: #33334d;
+}
+
+/* Main Content */
+.landingMainContainer {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  flex-wrap: wrap;
+}
+
+.landingMainContainer > div {
+  flex: 1;
+  min-width: 300px;
+  padding: 1rem;
+}
+
+.landingMainContainer h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.landingMainContainer p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.landingMainContainer a {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #ff9839;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.landingMainContainer a:hover {
+  background-color: #e67e22;
+}
+
+.landingMainContainer img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive Behavior */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .navlist {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    flex-direction: column;
+    background-color: #1e1e2f;
+    width: 100%;
+    display: none;
+  }
+
+  .navlist.open {
+    display: flex;
+  }
+
+  .navlist p,
+  .navlist div {
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 16px;
+    border-top: 1px solid #333;
+  }
+
+  .landingMainContainer {
+    flex-direction: column;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .landingMainContainer h1 {
+    font-size: 1.5rem;
+  }
+
+  .landingMainContainer p {
+    font-size: 1rem;
+  }
+}
+
+
+/* home page  */
+
+
+.navBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 20px;
+  text-align: center;
+
+}
+.meetContainer {
+  display: flex;
+  padding-inline: 20px;
+  height: 80vh;
+  gap: 10vw;
+  justify-content: center;
+}
+
+
+
+.leftPanel {
+  height: 100%;
+  display: flex;
+  align-items: center;
+
+}
+
+.rightPanel {
+  display: flex;
+  align-items: center;
+}
+
+.rightPanel > img {
+  width: 30vw;
+  height: auto;
+  border-radius: 20px;
 }

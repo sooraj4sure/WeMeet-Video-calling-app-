@@ -45,3 +45,29 @@
     color: white;
 
 }
+
+/* chat style  */
+
+.chatRoom{
+    position: absolute;
+    height: 70vh;
+    right: 0;
+    bottom: 2rem;
+    background: wheat;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    width: 25vw;
+    padding-inline: 20px;
+}
+
+.chatContainer{
+    position: relative;
+    height: 100%;
+}
+
+.chattingArea{
+
+    position: absolute;
+    bottom: 0;
+}
