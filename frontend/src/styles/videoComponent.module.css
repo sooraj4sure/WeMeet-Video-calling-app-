@@ -48,26 +48,96 @@
 
 /* chat style  */
 
-.chatRoom{
-    position: absolute;
-    height: 70vh;
-    right: 0;
+.chatRoom {
+    position: fixed;
     bottom: 2rem;
-    background: wheat;
-    border-top-left-radius: 2rem;
-    border-top-right-radius: 2rem;
-    border-bottom-right-radius: 2rem;
+    right: 2rem;
     width: 25vw;
-    padding-inline: 20px;
+    height: 70vh;
+    background: #1f1f1f;
+    border-radius: 1.5rem 1.5rem 1.5rem 0;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    padding: 1rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
 }
 
-.chatContainer{
-    position: relative;
+.chatContainer {
+    display: flex;
+    flex-direction: column;
     height: 100%;
 }
 
-.chattingArea{
+.chatContainer h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #FF9839;
+}
 
-    position: absolute;
-    bottom: 0;
+.chattingDisplay {
+    flex: 1;
+    overflow-y: auto;
+    margin-bottom: 1rem;
+    padding-right: 5px;
+    scrollbar-width: thin;
+}
+
+.chattingDisplay::-webkit-scrollbar {
+    width: 6px;
+}
+.chattingDisplay::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+.chattingArea {
+    display: flex;
+    gap: 0.5rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid #444;
+    background-color: #2a2a2a;
+}
+
+.chattingArea input,
+.chattingArea .MuiTextField-root {
+    flex: 1;
+}
+
+.chattingArea button {
+    background-color: #FF9839;
+    color: white;
+}
+
+.chattingArea button:hover {
+    background-color: #e47d23;
+}
+
+/* Mobile responsive */
+@media screen and (max-width: 768px) {
+    .chatRoom {
+        width: 90vw;
+        height: 60vh;
+        bottom: 1rem;
+        right: 50%;
+        transform: translateX(50%);
+        border-radius: 1rem 1rem 1rem 0;
+        padding: 1rem;
+    }
+
+    .chatContainer h1 {
+        font-size: 1.25rem;
+    }
+
+    .chattingArea {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .chattingArea button {
+        width: 100%;
+    }
 }

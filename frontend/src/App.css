@@ -1,81 +1,7 @@
-/* landing page css */
 
-/* .landingPageContainer{
-  width: 100%;
-  height: 100%;
-  background: url("/background.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: white;
-}
-
-.landingPageContainer nav{
-  padding-inline: 1.2rem;
-  padding-block: 1.6rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.landingPageContainer nav h2{
-  font-size: 1.7rem;
-  font-weight: 400;
-}
-
-.landingPageContainer .navList{
-  display: flex;
-  gap: 1.6rem;
-  cursor: pointer;
-
-}
-
-
-.landingMainContainer {
-  display: flex;
-  justify-content: space-between;
-  padding-inline: 3rem;
-  padding-top: 8vh;
- 
-  align-items: center;
-  padding-bottom: 8.4vh;
-}
-
-
-.landingMainContainer > div:nth-child(1){
-  font-size: 1.6rem;
-  font-weight: 200;
-  
-}
-.landingMainContainer > div:nth-child(1) h1{
-  font-weight: 400;
-  padding-bottom: 1rem;
-}
-
-.landingMainContainer > div:nth-child(1) div[role='button']{
-  margin-top: 1.5rem;
-}
-.landingMainContainer > div:nth-child(1) div[role='button'] a {
-  background-color: #D97500;
-  color: white;
-  text-decoration: none;
-  padding-block: 0.3rem;
-  padding-inline: 0.5rem;
-  border-radius: .6rem;
-  font-weight: 400;
-  font-size: 1.5rem;
-
-}
-
-.landingMainContainer > div:nth-child(2) img{
-  height: 70vh;
-  width: auto;
-
-} */
-/* App.css */
-
-/* App.css */
 
 body {
+
   margin: 0;
   font-family: Arial, sans-serif;
 }
@@ -91,7 +17,8 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #1e1e2f;
+  background-color: var(--bg-dark);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
   padding: 1rem 2rem;
   color: white;
   position: relative;
@@ -129,7 +56,6 @@ nav {
   cursor: pointer;
   padding: 0.5rem 1rem;
   border-radius: 4px;
-  transition: background 0.3s ease;
   white-space: nowrap;
 }
 
@@ -148,7 +74,7 @@ nav {
   flex-wrap: wrap;
 }
 
-.landingMainContainer > div {
+.landingMainContainer>div {
   flex: 1;
   min-width: 300px;
   padding: 1rem;
@@ -172,7 +98,7 @@ nav {
   text-decoration: none;
   border-radius: 5px;
   font-weight: bold;
-  transition: background 0.3s ease;
+
 }
 
 .landingMainContainer a:hover {
@@ -182,6 +108,7 @@ nav {
 .landingMainContainer img {
   max-width: 100%;
   height: auto;
+  
 }
 
 /* Responsive Behavior */
@@ -240,6 +167,7 @@ nav {
   text-align: center;
 
 }
+
 .meetContainer {
   display: flex;
   padding-inline: 20px;
@@ -260,9 +188,10 @@ nav {
 .rightPanel {
   display: flex;
   align-items: center;
+  
 }
 
-.rightPanel > img {
+.rightPanel>img {
   width: 30vw;
   height: auto;
   border-radius: 20px;

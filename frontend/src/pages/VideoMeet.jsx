@@ -58,11 +58,7 @@ export default function VideoMeetComponent() {
 
     let [videos, setVideos] = useState([])
 
-    // TODO
-    // if(isChrome() === false) {
 
-
-    // }
 
     useEffect(() => {
         console.log("HELLO")
@@ -431,6 +427,7 @@ export default function VideoMeetComponent() {
 
 
 
+
     let sendMessage = () => {
         console.log(socketRef.current);
         socketRef.current.emit('chat-message', message, username)
@@ -438,6 +435,12 @@ export default function VideoMeetComponent() {
 
         // this.setState({ message: "", sender: username })
     }
+
+    useEffect(() => {
+    const chatDisplay = document.querySelector(`.${styles.chattingDisplay}`);
+    if (chatDisplay) chatDisplay.scrollTop = chatDisplay.scrollHeight;
+}, [messages]);
+
 
     
     let connect = () => {
@@ -471,7 +474,7 @@ export default function VideoMeetComponent() {
                     {showModal ? <div className={styles.chatRoom}>
 
                         <div className={styles.chatContainer}>
-                            <h1>Chat</h1>
+                            <h1>Chat Box</h1>
 
                             <div className={styles.chattingDisplay}>
 
